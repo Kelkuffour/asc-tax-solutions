@@ -524,9 +524,13 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-sty
 
 /* ---------- Wide photo above the "why" statement (like Ledgerhouse's team photo) ---------- */
 .why-photo { border-radius: var(--radius); overflow: hidden; margin-bottom: 4.5rem; }
+/* tighter gap between the why grid and the documents checklist */
+.why { padding-bottom: 0; }
+.why + .documents { padding-top: 5rem; }
 .why-photo img { display: block; width: 100%; height: auto; aspect-ratio: 2.3 / 1; object-fit: cover; object-position: 50% 60%; }
 @media (max-width: 768px) {
   .why-photo { margin-bottom: 2.5rem; }
+  .why + .documents { padding-top: 2.75rem; }
   .why-photo img { aspect-ratio: 2.05 / 1; object-position: 40% 60%; }
 }
 
