@@ -93,7 +93,9 @@ p { margin: 0; }
 .arrow-btn { display: inline-flex; align-items: center; font-weight: 500; }
 .arrow-btn-label {
   display: inline-block;
-  padding: .95rem 1.6rem;
+  padding: .625rem 1.5rem; /* 44px tall, like Ledgerhouse */
+  min-width: 13.25rem; text-align: center;
+  font-size: .938rem; line-height: 1.5rem;
   border-radius: var(--radius-pill);
   background: var(--white);
   color: var(--gray-1);
@@ -101,8 +103,8 @@ p { margin: 0; }
 }
 .arrow-btn-icon {
   display: inline-grid; place-items: center;
-  width: 3.05rem; height: 3.05rem;
-  margin-left: -.1rem;
+  width: 2.75rem; height: 2.75rem;
+  margin-left: 0;
   border-radius: 50%;
   background: var(--white);
   color: var(--gray-1);
@@ -186,7 +188,6 @@ p { margin: 0; }
 }
 .hero-inner { position: relative; z-index: 1; transform-origin: 30% 50%; }
 .hero-copy h1 { margin: 1.25rem 0 2rem; max-width: 15ch; color: var(--white); }
-.hero .arrow-btn-label, .services-intro .arrow-btn-label { padding-left: 2.4rem; padding-right: 2.4rem; }
 .btn-row { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; }
 .chip-dark { background: rgba(255, 255, 255, .18); border: 1px solid rgba(255, 255, 255, .25); }
 
@@ -474,11 +475,11 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-sty
     linear-gradient(180deg, rgba(14, 18, 9, .1) 0%, rgba(14, 18, 9, .35) 35%, rgba(14, 18, 9, .3) 100%); }
   .chip-dark { font-size: .62rem; letter-spacing: .1em; }
   .hero-copy h1 { font-size: clamp(2.2rem, 10vw, 2.75rem); max-width: none; margin: .85rem 0 1.1rem; }
-  .hero .arrow-btn-label, .services-intro .arrow-btn-label { padding-left: 2.2rem; padding-right: 2.2rem; }
   .chip-dark { white-space: normal; line-height: 1.6; padding: .55rem 1rem; }
     /* Phones: first screen shows the hero AND the 'What we do' intro, like Ledgerhouse */
-  .arrow-btn-label { padding: .72rem 1.25rem; font-size: .95rem; }
-  .arrow-btn-icon { width: 2.55rem; height: 2.55rem; }
+  /* Phones: Ledgerhouse sizing, 36px tall, long slim pill */
+  .arrow-btn-label { padding: .375rem 1.25rem; min-width: 12.75rem; }
+  .arrow-btn-icon { width: 2.25rem; height: 2.25rem; font-size: 1rem; }
   .services-intro .chip-lg { padding: .4rem .95rem; font-size: .78rem; }
   .services-intro h2 { font-size: 2rem; margin: .7rem 0 .6rem; }
   .services-intro p { margin-bottom: .9rem; font-size: .9rem; }
@@ -515,7 +516,6 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-sty
 
 @media (max-width: 480px) {
   .why-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-  .btn-row .arrow-btn-label { padding-top: .72rem; padding-bottom: .72rem; }
 }
 
 @media (max-width: 360px) {
