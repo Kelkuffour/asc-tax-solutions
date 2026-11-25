@@ -190,17 +190,6 @@ p { margin: 0; }
 .btn-row { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; }
 .chip-dark { background: rgba(255, 255, 255, .18); border: 1px solid rgba(255, 255, 255, .25); }
 
-.hero-word-wrap { position: relative; z-index: 1; margin-top: 4rem; }
-.hero-word {
-  font-family: var(--font-head);
-  font-weight: 500;
-  font-size: clamp(2.9rem, 11.5vw, 11rem);
-  line-height: .85;
-  letter-spacing: -.05em;
-  color: var(--white);
-  white-space: nowrap;
-  user-select: none;
-}
 
 
 /* ---------- SERVICES ---------- */
@@ -487,8 +476,7 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-sty
   .hero-copy h1 { font-size: clamp(2.2rem, 10vw, 2.75rem); max-width: none; margin: .85rem 0 1.1rem; }
   .hero .arrow-btn-label, .services-intro .arrow-btn-label { padding-left: 2.2rem; padding-right: 2.2rem; }
   .chip-dark { white-space: normal; line-height: 1.6; padding: .55rem 1rem; }
-  .hero-word-wrap { margin-top: 2.9rem; }
-  /* Phones: first screen shows the hero AND the 'What we do' intro, like Ledgerhouse */
+    /* Phones: first screen shows the hero AND the 'What we do' intro, like Ledgerhouse */
   .arrow-btn-label { padding: .72rem 1.25rem; font-size: .95rem; }
   .arrow-btn-icon { width: 2.55rem; height: 2.55rem; }
   .services-intro .chip-lg { padding: .4rem .95rem; font-size: .78rem; }
@@ -533,6 +521,10 @@ cite { display: block; margin-top: 1rem; font-family: var(--font-body); font-sty
 @media (max-width: 360px) {
   .glass-top { display: none; }
 }
+
+/* ---------- On-load entrance (hidden only while the intro runs; see main.js) ---------- */
+.intro .nav-card, .intro .hero-copy > *, .intro .hero-bg-img { opacity: 0; }
+.intro-word { display: inline-block; will-change: transform, filter, opacity; }
 
 /* ---------- FILINGS MARQUEE (infinite loop, like Ledgerhouse's logo strip) ---------- */
 .marquee-section { margin-top: -5rem; padding: 0 0 1rem; }

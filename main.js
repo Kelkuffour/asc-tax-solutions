@@ -225,3 +225,55 @@
   window.addEventListener('load', () => ScrollTrigger.refresh());
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => ScrollTrigger.refresh());
 })();
+
+/* ---------- On-load entrance: soft blur-up reveal (Linear-style) ---------- */
+(function () {
+  const root = document.documentElement;
+  const done = () => root.classList.remove('intro');
+  if (!root.classList.contains('intro')) return;          // reduced motion: nothing to do
+  if (!window.gsap) { done(); return; }                   // CDN failed: just show everything
+
+  // Split the headline into words (keeps the yellow "the rest." span intact)
+  const h1 = document.querySelector('.hero-copy h1');
+  const words = [];
+  if (h1) {
+    const split = (node) => {
+      [...node.childNodes].forEach((n) => {
+        if (n.nodeType === 3) {
+          const frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach((part) => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+            const w = document.createElement('span');
+            w.className = 'intro-word';
+            w.textContent = part;
+            words.push(w);
+            frag.appendChild(w);
+          });
+          n.replaceWith(frag);
+        } else if (n.nodeType === 1) split(n);
+      });
+    };
+    split(h1);
+  }
+
+  const chip = document.querySelector('.hero-copy .chip');
+  const btns = document.querySelector('.hero-copy .btn-row');
+  const nav = document.querySelector('.nav-card');
+  const bg = document.querySelector('.hero-bg-img');
+  const ease = 'expo.out';
+  const hidden = { autoAlpha: 0, filter: 'blur(10px)' };
+
+  const tl = gsap.timeline({ defaults: { ease }, onComplete: () => {
+    gsap.set([nav, chip, btns, h1, ...words].filter(Boolean), { clearProps: 'filter,transform,willChange' });
+  } });
+
+  if (bg) tl.fromTo(bg, { autoAlpha: 0, scale: 1.08 }, { autoAlpha: 1, scale: 1, duration: 2.2, ease: 'power3.out' }, 0);
+  if (nav) tl.fromTo(nav, { ...hidden, y: -14 }, { autoAlpha: 1, filter: 'blur(0px)', y: 0, duration: 1.2 }, 0.15);
+  if (chip) tl.fromTo(chip, { ...hidden, y: 16 }, { autoAlpha: 1, filter: 'blur(0px)', y: 0, duration: 1.2 }, 0.3);
+  if (h1) tl.set(h1, { autoAlpha: 1 }, 0.4);
+  if (words.length) tl.fromTo(words, { ...hidden, y: 22 }, { autoAlpha: 1, filter: 'blur(0px)', y: 0, duration: 1.3, stagger: 0.05 }, 0.4);
+  if (btns) tl.fromTo(btns, { ...hidden, y: 18 }, { autoAlpha: 1, filter: 'blur(0px)', y: 0, duration: 1.2 }, 0.4 + words.length * 0.05 + 0.1);
+
+  done(); // starting states are now set inline by GSAP, so the CSS hide can go
+})();
