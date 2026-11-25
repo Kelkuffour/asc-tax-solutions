@@ -136,6 +136,7 @@ p { margin: 0; }
   position: relative;
   display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
   max-width: 760px;
+  margin: 0 auto; /* centered on wide screens */
   padding: .25rem .25rem .25rem .8rem;
   background: var(--white);
   border: 1px solid var(--line);
