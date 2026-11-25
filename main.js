@@ -181,7 +181,7 @@
         // so the pinned frame is never empty.
         ScrollTrigger.create({
           trigger: section,
-          start: 'top top',
+          start: 'top 24px', // pin a little lower so the fixed navbar never covers the content
           end: '+=60%',
           pin: true,
           anticipatePin: 1
