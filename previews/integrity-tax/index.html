@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Integrity Tax &amp; Small Business Solutions | Website preview</title>
+  <meta name="description" content="Website design preview for Integrity Tax &amp; Small Business Solutions.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>/* hide hero until the entrance animation starts (failsafe: shows after 4s) */
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('intro');
+      setTimeout(function () { document.documentElement.classList.remove('intro'); }, 4000);
+    }
+  </script>
+  <link rel="stylesheet" href="../../styles.css?v=1795641457">
+  <style>:root{--primary:#bfe8cf}.preview-badge{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 5.25rem);transform:translateX(-50%);z-index:60;background:rgba(14,18,9,.88);color:#fff;font-size:.72rem;letter-spacing:.02em;padding:.45rem .9rem;border-radius:100px;white-space:nowrap;max-width:calc(100vw - 2rem);overflow:hidden;text-overflow:ellipsis;pointer-events:none;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}@media (min-width:769px){.preview-badge{bottom:1.25rem;font-size:.78rem}}</style>
+</head>
+<body>
+  <div class="preview-badge">Design preview · not the official website</div>
+
+  <!-- ============ NAV (not animated) ============ -->
+  <header class="nav">
+    <div class="nav-card">
+      <a href="#top" class="logo" aria-label="Integrity Tax &amp; Small Business Solutions home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="2"/>
+          <rect x="9" y="15" width="3" height="7" rx="1" fill="currentColor"/>
+          <rect x="14.5" y="11" width="3" height="11" rx="1" fill="currentColor"/>
+          <path d="M7 17.5l6 6L26 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Integrity <em>Tax &amp; Business</em></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#why">Why us</a>
+        <a href="#documents">Documents</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="pill pill-sm pill-gold">Contact</a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <!-- Hero background photo (Unsplash) -->
+      <img src="../../assets/hero.jpg" alt="" class="hero-bg-img" aria-hidden="true">
+      <div class="container hero-inner anim-hero">
+        <div class="hero-copy">
+          <span class="chip chip-dark">Tax &amp; small business solutions · Lafayette, LA</span>
+          <h1>Let us handle the stress. You keep <span class="accent">the rest.</span></h1>
+          <div class="btn-row">
+            <a href="tel:+15555550123" class="arrow-btn">
+              <span class="arrow-btn-label">Call or text today</span>
+              <span class="arrow-btn-icon" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES (pinned showcase) ============ -->
+    <section class="section services anim-pin" id="services">
+      <div class="container services-grid">
+        <div class="services-intro anim-piece" data-from="left">
+          <span class="chip chip-lg">What we do</span>
+          <h2>Five services, one trusted pro</h2>
+          <p class="muted">Most clients start with their personal return, then come back year-round for business and planning help.</p>
+          <a href="#contact" class="arrow-btn arrow-btn-dark">
+            <span class="arrow-btn-label">Get started</span>
+            <span class="arrow-btn-icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <ol class="service-list">
+          <li class="service anim-piece is-open" data-from="right">
+            <h3 class="service-heading">
+              <button class="service-head" id="svc-1-btn" aria-expanded="true" aria-controls="svc-1">
+                <span class="service-title">Individual tax returns</span>
+                <span class="service-meta">W-2 · 1099</span>
+                <span class="service-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-panel" id="svc-1" role="region" aria-labelledby="svc-1-btn">
+              <div class="service-panel-inner">
+                <div class="service-body">
+                  <img class="service-img" src="../../assets/service-1.jpg" alt="A typewriter with a page reading Tax Return" loading="lazy" width="1200" height="825">
+                  <div class="service-text">
+                    <p>Your personal return prepared, checked line by line, and e-filed for the fastest refund possible.</p>
+                    <ul class="tags"><li>E-File</li><li>Amendments</li><li>Prior-year returns</li><li>Self-employed</li></ul>
+                    <a href="tel:+15555550123" class="arrow-btn arrow-btn-yellow">
+                      <span class="arrow-btn-label">Ask about this</span>
+                      <span class="arrow-btn-icon" aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="service anim-piece" data-from="right">
+            <h3 class="service-heading">
+              <button class="service-head" id="svc-2-btn" aria-expanded="false" aria-controls="svc-2">
+                <span class="service-title">Business tax returns</span>
+                <span class="service-meta">LLC · S-Corp</span>
+                <span class="service-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-panel" id="svc-2" role="region" aria-labelledby="svc-2-btn" inert>
+              <div class="service-panel-inner">
+                <div class="service-body">
+                  <img class="service-img" src="../../assets/service-2.jpg" alt="Hands working with a calculator and notebook at a desk" loading="lazy" width="1200" height="825">
+                  <div class="service-text">
+                    <p>Year-end business returns for LLCs, S-Corps and partnerships, filed correctly and explained in plain English.</p>
+                    <ul class="tags"><li>LLC</li><li>S-Corp</li><li>Partnerships</li></ul>
+                    <a href="tel:+15555550123" class="arrow-btn arrow-btn-yellow">
+                      <span class="arrow-btn-label">Ask about this</span>
+                      <span class="arrow-btn-icon" aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="service anim-piece" data-from="right">
+            <h3 class="service-heading">
+              <button class="service-head" id="svc-3-btn" aria-expanded="false" aria-controls="svc-3">
+                <span class="service-title">Small business support</span>
+                <span class="service-meta">Bookkeeping</span>
+                <span class="service-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-panel" id="svc-3" role="region" aria-labelledby="svc-3-btn" inert>
+              <div class="service-panel-inner">
+                <div class="service-body">
+                  <img class="service-img" src="../../assets/service-3.jpg" alt="A smiling carpenter at work in his woodshop" loading="lazy" width="1200" height="825">
+                  <div class="service-text">
+                    <p>Keep clean books all year so tax time is simple, plus new business setup consultations.</p>
+                    <ul class="tags"><li>Bookkeeping</li><li>New business setup</li><li>Year-round</li></ul>
+                    <a href="tel:+15555550123" class="arrow-btn arrow-btn-yellow">
+                      <span class="arrow-btn-label">Ask about this</span>
+                      <span class="arrow-btn-icon" aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="service anim-piece" data-from="right">
+            <h3 class="service-heading">
+              <button class="service-head" id="svc-4-btn" aria-expanded="false" aria-controls="svc-4">
+                <span class="service-title">Audit assistance</span>
+                <span class="service-meta">IRS letters</span>
+                <span class="service-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-panel" id="svc-4" role="region" aria-labelledby="svc-4-btn" inert>
+              <div class="service-panel-inner">
+                <div class="service-body">
+                  <img class="service-img" src="../../assets/service-4.jpg" alt="Two people reviewing tax forms at a table" loading="lazy" width="1200" height="825">
+                  <div class="service-text">
+                    <p>Got a letter from the IRS? You won’t face it alone. We’ll respond and represent you.</p>
+                    <ul class="tags"><li>IRS letters</li><li>Representation</li></ul>
+                    <a href="tel:+15555550123" class="arrow-btn arrow-btn-yellow">
+                      <span class="arrow-btn-label">Ask about this</span>
+                      <span class="arrow-btn-icon" aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="service anim-piece" data-from="right">
+            <h3 class="service-heading">
+              <button class="service-head" id="svc-5-btn" aria-expanded="false" aria-controls="svc-5">
+                <span class="service-title">Tax planning</span>
+                <span class="service-meta">Deductions</span>
+                <span class="service-toggle" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="service-panel" id="svc-5" role="region" aria-labelledby="svc-5-btn" inert>
+              <div class="service-panel-inner">
+                <div class="service-body">
+                  <img class="service-img" src="../../assets/service-5.jpg" alt="Hands stacking coins on a table" loading="lazy" width="1200" height="825">
+                  <div class="service-text">
+                    <p>A plan for the year ahead, so you keep more of what you earn and don’t get surprised in April.</p>
+                    <ul class="tags"><li>Max deductions</li><li>Year-round questions</li></ul>
+                    <a href="tel:+15555550123" class="arrow-btn arrow-btn-yellow">
+                      <span class="arrow-btn-label">Ask about this</span>
+                      <span class="arrow-btn-icon" aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FEATURE (pinned showcase) ============ -->
+    <section class="section feature anim-pin">
+      <div class="container feature-grid">
+        <div class="feature-visual anim-piece" data-from="left">
+          <img class="feature-bg" src="../../assets/steps-bg.jpg" alt="" aria-hidden="true" loading="lazy" data-chin="0.317" data-head="0.1" data-face-x="0.529">
+          <div class="glass-doc">
+            <div class="glass-top" aria-hidden="true">
+              <svg class="doodle-plane" viewBox="0 0 120 90" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 34 L104 8 L46 58 Z"/>
+                <path d="M46 58 L52 40 L104 8"/>
+                <path d="M52 40 L64 50"/>
+                <path d="M40 62 C30 70 22 80 30 84 C40 88 50 66 62 70 C70 73 72 80 76 84"/>
+                <path d="M108 4 l6 -3 M110 12 l7 0 M104 0 l2 -5"/>
+              </svg>
+              <div class="glass-script">
+                <em>Your refund,<br>handled.</em>
+                <svg class="doodle-underline" viewBox="0 0 160 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 9 C40 3 90 3 157 8"/></svg>
+              </div>
+            </div>
+            <span class="glass-label">How it works</span>
+            <ol class="card-steps">
+              <li><span class="card-step-num">01</span><strong>Call or text</strong><span>Tell us what you need.</span></li>
+              <li><span class="card-step-num">02</span><strong>Send documents</strong><span>Photos are fine.</span></li>
+              <li><span class="card-step-num">03</span><strong>We prepare</strong><span>Reviewed with you first.</span></li>
+              <li><span class="card-step-num">04</span><strong>E-file &amp; refund</strong><span>The fastest way to get paid.</span></li>
+            </ol>
+            <div class="glass-foot">
+              <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 17l7 7L27 9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div><strong>It’s more than taxes</strong><span>It’s your financial future.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-copy feature-panel">
+          <span class="chip anim-piece">The max refund</span>
+          <h2 class="anim-piece">Get the refund you deserve</h2>
+          <p class="muted anim-piece">We work hard so you can keep more of yours. Here’s what every return includes.</p>
+          <div class="receipt anim-piece">
+            <div class="receipt-row"><span>Filing</span><strong>E-file for faster refunds</strong></div>
+            <div class="receipt-row"><span>Review</span><strong>Line by line, with you</strong></div>
+            <div class="receipt-row"><span>Fixes</span><strong>Amendments &amp; prior years</strong></div>
+            <div class="receipt-row"><span>Support</span><strong>Year-round</strong></div>
+            <div class="receipt-row total"><span>Your information</span><strong>100% secure &amp; confidential</strong></div>
+            <p class="receipt-foot">Prepared by Integrity Tax &amp; Small Business Solutions</p>
+          </div>
+          <a href="tel:+15555550123" class="arrow-btn arrow-btn-yellow anim-piece">
+            <span class="arrow-btn-label">Start my return</span>
+            <span class="arrow-btn-icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FILINGS MARQUEE ============ -->
+    <section class="marquee-section" aria-label="Filings we handle">
+      <div class="container marquee-head anim-fade"><span class="chip">Filings we handle</span></div>
+      <div class="marquee">
+        <div class="marquee-track">
+          <ul class="marquee-group"><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>IRS e-file</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>W-2 &amp; 1099</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18v11H3z"/><path d="M8 9V5h8v4"/></svg>Schedule C</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></svg>LLC</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V4h10v17M14 9h6v12"/><path d="M7 8h4M7 12h4M7 16h4"/></svg>S-Corp</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5M11 20c0-3 2.5-5 5-5s5 2 5 5"/></svg>Partnerships</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg>Amended returns</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Prior-year returns</li></ul>
+          <ul class="marquee-group" aria-hidden="true"><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>IRS e-file</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>W-2 &amp; 1099</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18v11H3z"/><path d="M8 9V5h8v4"/></svg>Schedule C</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></svg>LLC</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V4h10v17M14 9h6v12"/><path d="M7 8h4M7 12h4M7 16h4"/></svg>S-Corp</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5M11 20c0-3 2.5-5 5-5s5 2 5 5"/></svg>Partnerships</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg>Amended returns</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Prior-year returns</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="why-photo anim-fade">
+          <img src="../../assets/team.jpg" alt="Clients and staff talking around a table in a bright office" loading="lazy" width="1800" height="823">
+        </div>
+        <p class="statement anim-fade">We’re not a faceless tax chain. <span class="muted-inline">You get one professional who knows your return, answers your texts, and makes sure</span> nothing lands on you in April.</p>
+        <div class="why-grid anim-stagger">
+          <div class="why-item"><strong>Honest</strong><span>Professional &amp; confidential service</span></div>
+          <div class="why-item"><strong>Max</strong><span>Deductions and refunds</span></div>
+          <div class="why-item"><strong>Fair</strong><span>Affordable pricing, flexible options</span></div>
+          <div class="why-item"><strong>100%</strong><span>Accuracy &amp; attention to detail</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOCUMENTS ============ -->
+    <section class="section documents" id="documents">
+      <div class="container">
+        <div class="docs-panel">
+          <div class="section-head center anim-fade">
+            <span class="chip">Checklist</span>
+            <h2>Documents you may need</h2>
+            <p class="muted">Bring what applies to you. Not sure? Text a photo and we’ll tell you.</p>
+          </div>
+          <ul class="doc-grid anim-stagger">
+            <li>Valid photo ID</li>
+            <li>Social Security cards</li>
+            <li>W-2 forms</li>
+            <li>1099 forms</li>
+            <li>Income records</li>
+            <li>Childcare expenses</li>
+            <li>Education expenses</li>
+            <li>Medical expenses</li>
+            <li>Mortgage interest</li>
+            <li>Business expenses</li>
+            <li>Last year’s tax return</li>
+            <li>And more…</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT (pinned showcase) ============ -->
+    <section class="section about anim-pin" id="about">
+      <div class="container about-grid">
+        <div class="about-photo anim-piece" data-from="left">
+          <img src="../../assets/team.jpg" alt="Placeholder photo" loading="lazy">
+          <span class="chip chip-gold">Your photo here</span>
+        </div>
+        <div class="about-copy">
+          <h2 class="anim-piece">Talk to Demond before tax season gets busy</h2>
+          <div class="callback-card anim-piece" data-from="right">
+            <h3>Demond Sam</h3>
+            <p class="muted">Owner, Integrity Tax &amp; Small Business Solutions</p>
+            <a href="tel:+15555550123" class="arrow-btn arrow-btn-dark">
+              <span class="arrow-btn-label">555-555-0123</span>
+              <span class="arrow-btn-icon" aria-hidden="true">→</span>
+            </a>
+            <p class="small muted">Call or text. Same-day replies during tax season.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="contact">
+      <div class="container cta-grid">
+        <div class="anim-fade">
+          <span class="chip chip-dark">Tax Season 2026</span>
+          <h2>Don’t wait until the last minute</h2>
+          <p>Let us take care of your taxes so you can focus on life.</p>
+        </div>
+        <div class="anim-fade">
+          <div class="receipt receipt-light">
+            <div class="receipt-row"><span>Phone</span><a href="tel:+15555550123">555-555-0123</a></div>
+            <div class="receipt-row"><span>Email</span><a href="mailto:hello@example.com">hello@example.com</a></div>
+            <div class="receipt-row"><span>Visit</span><strong>5520 Johnston St, Ste K, Lafayette, LA</strong></div>
+            <div class="receipt-row"><span>Best way</span><strong>Call or text</strong></div>
+            <div class="receipt-row"><span>We serve</span><strong>Individuals &amp; small businesses</strong></div>
+          </div>
+          <a href="tel:+15555550123" class="arrow-btn arrow-btn-dark cta-btn">
+            <span class="arrow-btn-label">Call or text today</span>
+            <span class="arrow-btn-icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER (not animated) ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-brand">
+          <a href="#top" class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <rect x="9" y="15" width="3" height="7" rx="1" fill="currentColor"/>
+              <rect x="14.5" y="11" width="3" height="11" rx="1" fill="currentColor"/>
+              <path d="M7 17.5l6 6L26 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Integrity <em>Tax &amp; Business</em></span>
+          </a>
+          <p>Your financial peace of mind is our priority.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="#services">Services</a>
+          <a href="#why">Why us</a>
+          <a href="#documents">Documents</a>
+          <a href="#about">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="tel:+15555550123" class="footer-big">555-555-0123</a>
+          <a href="mailto:hello@example.com" class="footer-big">hello@example.com</a>
+          <span>Call or text anytime</span>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Integrity Tax &amp; Small Business Solutions. All rights reserved.</span>
+          <span>5520 Johnston St, Ste K, Lafayette, LA</span>
+        </div>
+      </div>
+      <div class="footer-word" aria-hidden="true">Integrity</div>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../../main.js?v=1795641457"></script>
+</body>
+</html>
